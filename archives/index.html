@@ -3,12 +3,12 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | Haibara的博客</title>
+    <title>Archives | Haibara の blog</title>
     <meta name="author" content="Haibara" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <link rel="icon" href="/images/avatar.jpg" />
+    <link rel="icon" href="/images/Haibara.png" />
     <link rel="preconnect" href="https://cdn.staticfile.org" />
 <script src="https://cdn.staticfile.org/vue/3.3.4/vue.global.prod.min.js"></script>
 <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" />
@@ -53,7 +53,7 @@
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>HAIBARA的博客</span>
+            <span>HAIBARA の BLOG</span>
         </a>
         
         <a href="/">
@@ -85,7 +85,7 @@
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;HAIBARA的博客</span>
+            <span>&emsp;HAIBARA の BLOG</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -149,15 +149,37 @@
     
     <div id="timeline-wrap" ref="timeline">
         
-        <div class="timeline" data-title="欢迎来到haibara的博客">
+        <div class="timeline" data-title="helloworld">
             <div class="timeline-tail"></div>
             <div class="timeline-content">
                 <div class="item-time">2023/10/12</div>
-                <a href="/2023/10/12/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0Haibara%E7%9A%84%E5%8D%9A%E5%AE%A2/">
-                    <h3>欢迎来到Haibara的博客</h3>
+                <a href="/2023/10/12/hello-world/">
+                    <h3>hello world</h3>
                 </a>
                 <div class="info">
                     
+                    <span class="category">
+                        <a href="/categories/informal-essay/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            informal essay
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/hello-world/" style="color: #ff7d73">hello world</a>
+                        </span>
+                        
+                    </span>
                     
                 </div>
             </div>
@@ -170,7 +192,7 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2023 Haibara的博客
+            2022 - 2023 Haibara の blog
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
