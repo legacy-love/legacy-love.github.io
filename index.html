@@ -3,8 +3,8 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>Haibara の blog</title>
-    <meta name="author" content="Haibara" />
+    <title>YaShiho の blog</title>
+    <meta name="author" content="YaShiho" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -28,6 +28,11 @@
 />
 <script src="/js/lib/highlight.js"></script>
 
+
+<script src="https://cdn.staticfile.org/KaTeX/0.16.8/katex.min.js"></script>
+<script src="https://cdn.staticfile.org/KaTeX/0.16.8/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.16.8/katex.min.css" />
+<script src="/js/lib/math.js"></script>
 
 
 <script src="/js/lib/preview.js"></script>
@@ -56,7 +61,7 @@
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>HAIBARA の BLOG</span>
+            <span>YASHIHO の BLOG</span>
         </a>
         
         <a href="/">
@@ -88,7 +93,7 @@
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;HAIBARA の BLOG</span>
+            <span>&emsp;YASHIHO の BLOG</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -156,7 +161,7 @@
         <span class="loop"></span>
         <span class="info">
             <div class="wrap">
-                <h1>Haibara の blog</h1>
+                <h1>YaShiho の blog</h1>
                 <h3></h3>
                 <h5></h5>
             </div>
@@ -194,7 +199,7 @@
     <div class="description">
         <div class="content" v-pre>
             
-            <p><strong>我从电脑中翻开文档一查，这文档没有代码，歪歪斜斜地每页上都写着“Hello World”几个字。仔细看了半天，才从字缝里看出字来，满本都写着“Home Work”两个字。——Haibara 《Haibara の blog》</strong></p>
+            <p><strong>我从电脑中翻开文档一查，这文档没有代码，歪歪斜斜地每页上都写着“Hello World”几个字。仔细看了半天，才从字缝里看出字来，满本都写着“Home Work”两个字。——YaShiho 《YaShiho の blog》</strong></p>
 
             
         </div>
@@ -209,7 +214,7 @@
         
         <span class="tag">
             
-            <a href="/tags/hello-world/" style="color: #00bcd4">hello world</a>
+            <a href="/tags/hello-world/" style="color: #ff7d73">hello world</a>
         </span>
         
     </div>
@@ -234,16 +239,10 @@
         <div class="avatar">
             <img src="/images/Haibara.png" alt="avatar" />
         </div>
-        <div class="name">Haibara</div>
+        <div class="name">YaShiho</div>
         <div class="description">
-            <p>My description:</p>
-<ul>
-<li><strong>lack of motivation</strong></li>
-<li><strong>a lazy boy</strong></li>
-<li><strong>CS learner</strong></li>
-<li><strong>basketball newby</strong></li>
-<li><strong>wanna be a detecive</strong></li>
-<li><strong>❤ Haibara Ai</strong></li>
+            <ul>
+<li><strong>Lazy</strong></li>
 </ul>
 
         </div>
@@ -272,11 +271,11 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2023 Haibara の blog
+            2022 - 2023 YaShiho の blog
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
-            &commat;Haibara
+            &commat;YaShiho
         </div>
         <div>
             Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;

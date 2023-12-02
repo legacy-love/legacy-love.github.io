@@ -3,8 +3,8 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>Categories: informal essay | Haibara の blog</title>
-    <meta name="author" content="Haibara" />
+    <title>Categories: informal essay | YaShiho の blog</title>
+    <meta name="author" content="YaShiho" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -28,6 +28,11 @@
 />
 <script src="/js/lib/highlight.js"></script>
 
+
+<script src="https://cdn.staticfile.org/KaTeX/0.16.8/katex.min.js"></script>
+<script src="https://cdn.staticfile.org/KaTeX/0.16.8/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.16.8/katex.min.css" />
+<script src="/js/lib/math.js"></script>
 
 
 <script src="/js/lib/preview.js"></script>
@@ -54,7 +59,7 @@
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>HAIBARA の BLOG</span>
+            <span>YASHIHO の BLOG</span>
         </a>
         
         <a href="/">
@@ -86,7 +91,7 @@
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;HAIBARA の BLOG</span>
+            <span>&emsp;YASHIHO の BLOG</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -192,7 +197,7 @@
                     
                     <span class="tag">
                         
-                        <a href="/tags/hello-world/" style="color: #00a596">hello world</a>
+                        <a href="/tags/hello-world/" style="color: #03a9f4">hello world</a>
                     </span>
                     
                 </span>
@@ -207,11 +212,11 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2023 Haibara の blog
+            2022 - 2023 YaShiho の blog
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
-            &commat;Haibara
+            &commat;YaShiho
         </div>
         <div>
             Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
